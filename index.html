@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Markdown Parser Demo using JS & jQuery</title>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script type="text/javascript" src="markdownParser.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class='left'>Markdown</div>
+  <div class='right'>HTML</div>
+</header>
+
+<textarea id=input>## Some tests
+
+Here are a few sample inputs. Your code should, of course, work with any input that uses the formatting rules above, but you can use this sample to get started testing.
+
+# Sample Document
+
+Hello!
+
+This is sample markdown for the [Mailchimp](https://www.mailchimp.com) homework assignment.
+
+Similarly, this sample:
+
+# Header one
+
+Hello there
+
+How are you?
+What's going on?
+
+## Another Header
+
+This is a paragraph [with an inline link](http://google.com). Neat, eh?
+
+## This is a header [with a link](http://yahoo.com)
+
+-----
+
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+Unformatted text
+[Link text](https://www.example.com)
+Inline Code `<h1>This should be raw HTML</h1>`
+
+```
+This is a code block with <b>raw HTML</b> We can place as much text as a we want and it will stay within it's own <i>block</i>.
+```
+
+Sample Photo
+![Sample Photo](https://eep.io/images/yzco4xsimv0y/4EYmudUq8Gtdr8J3EKxvpz/5e4912d172bf30f03904865573986404/MC_Dev.svg?w=20&q=20)
+</textarea>
+
+<textarea id=results readonly></textarea>
+<div id=resultsDiv style='display:none;'></div>
+
+
+<footer><button type=submit id=parse>Parse</button> <button type=submit id=html>Show/Hide HTML</button></footer>
+
+</body>
+</html>
